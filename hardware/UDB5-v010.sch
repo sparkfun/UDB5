@@ -15085,7 +15085,7 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <instance part="GND51" gate="1" x="99.06" y="129.54"/>
 <instance part="C6" gate="G$1" x="132.08" y="139.7"/>
 <instance part="U5" gate="G$1" x="48.26" y="142.24"/>
-<instance part="U$9" gate="G$1" x="120.65" y="13.716"/>
+<instance part="U$9" gate="G$1" x="133.35" y="11.176"/>
 <instance part="C4" gate="G$1" x="81.28" y="137.16"/>
 <instance part="C8" gate="G$1" x="139.7" y="137.16"/>
 <instance part="GND56" gate="1" x="81.28" y="129.54"/>
