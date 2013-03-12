@@ -12,12 +12,12 @@
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="13" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="13" fill="4" visible="no" active="yes"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
 <layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
 <layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
 <layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="3" fill="7" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="3" fill="7" visible="no" active="yes"/>
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
@@ -240,7 +240,7 @@
 <text x="60.6552" y="5.9078" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">8</text>
 <text x="53.0606" y="31.9428" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
 <text x="53.467" y="30.9268" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">MCLR</text>
-<text x="18.161" y="0.508" size="1.778" layer="16" font="vector" ratio="18" rot="MR0">v010</text>
+<text x="18.161" y="0.508" size="1.778" layer="16" font="vector" ratio="18" rot="MR0">v011</text>
 <text x="54.0258" y="28.1328" size="0.8128" layer="21" font="vector" ratio="15">1</text>
 <text x="50.0888" y="28.1328" size="0.8128" layer="21" font="vector" ratio="15">2</text>
 <text x="46.1518" y="28.2598" size="0.8128" layer="21" font="vector" ratio="15">3</text>
@@ -256,9 +256,9 @@
 <text x="45.4406" y="30.9268" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
 <text x="47.9806" y="30.9268" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
 <text x="32.0167" y="5.3363" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">-</text>
-<text x="19.558" y="26.289" size="0.508" layer="21" font="vector" ratio="15">direction</text>
-<text x="22.606" y="25.4" size="0.508" layer="21" font="vector" ratio="15">of</text>
-<text x="19.558" y="24.638" size="0.508" layer="21" font="vector" ratio="15">flight</text>
+<text x="18.034" y="27.686" size="0.8128" layer="21" font="vector" ratio="15">direction</text>
+<text x="20.066" y="26.289" size="0.8128" layer="21" font="vector" ratio="15">of</text>
+<text x="19.558" y="24.13" size="0.8128" layer="21" font="vector" ratio="15">flight</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -2696,6 +2696,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2964,6 +2976,10 @@ design rules under a new name.</description>
 <element name="JP9" library="SparkFun-Connectors" package="1X06" value="GND" x="34.29" y="34.29"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="SFE-NEW-WEB" value="LOGO-SFENW2" x="19.558" y="19.431"/>
 <element name="CC_TEXT1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="CREATIVE_COMMONS" x="21.59" y="-10.16"/>
+<element name="TP1" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="42.926" y="27.559" rot="MR0"/>
+<element name="TP2" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="42.926" y="20.955" rot="MR0"/>
+<element name="TP3" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="41.91" y="20.955" rot="MR0"/>
+<element name="TP4" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="38.227" y="24.257" rot="MR0"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -4106,6 +4122,8 @@ design rules under a new name.</description>
 <wire x1="32.766" y1="24.638" x2="36.068" y2="21.336" width="0.1778" layer="5"/>
 <wire x1="36.068" y1="21.336" x2="42.164" y2="21.336" width="0.1778" layer="5"/>
 <wire x1="42.164" y1="21.336" x2="42.926" y2="22.098" width="0.1778" layer="5"/>
+<contactref element="TP2" pad="P$1"/>
+<wire x1="42.926" y1="20.955" x2="42.926" y2="22.098" width="0.2032" layer="16"/>
 </signal>
 <signal name="SS1">
 <contactref element="U1" pad="23"/>
@@ -4662,17 +4680,16 @@ design rules under a new name.</description>
 <wire x1="26.162" y1="31.242" x2="25.4" y2="30.48" width="0.1778" layer="10"/>
 <wire x1="41.51" y1="27.286" x2="41.783" y2="27.559" width="0.1778" layer="1"/>
 <wire x1="29.845" y1="31.242" x2="26.162" y2="31.242" width="0.1778" layer="10"/>
+<contactref element="TP1" pad="P$1"/>
+<wire x1="41.783" y1="27.559" x2="42.926" y2="27.559" width="0.2032" layer="16"/>
 </signal>
-<signal name="MPU-SDO">
+<signal name="MPU-MISO">
 <contactref element="U10" pad="9"/>
-<contactref element="U1" pad="12"/>
 <wire x1="25.8184" y1="26.9275" x2="23.7455" y2="26.9275" width="0.1778" layer="1"/>
 <wire x1="23.7455" y1="26.9275" x2="23.368" y2="27.305" width="0.1778" layer="1"/>
-<wire x1="42.31" y1="25.75" x2="42.31" y2="24.276" width="0.1778" layer="1"/>
-<wire x1="42.31" y1="24.276" x2="41.148" y2="23.114" width="0.1778" layer="1"/>
-<via x="41.148" y="22.098" extent="1-16" drill="0.3302"/>
+<via x="41.91" y="22.098" extent="1-16" drill="0.3302"/>
 <via x="23.368" y="27.305" extent="1-16" drill="0.3302"/>
-<wire x1="41.148" y1="22.098" x2="38.354" y2="22.098" width="0.1778" layer="10"/>
+<wire x1="41.91" y1="22.098" x2="38.354" y2="22.098" width="0.1778" layer="10"/>
 <wire x1="38.354" y1="22.098" x2="36.83" y2="20.574" width="0.1778" layer="10"/>
 <wire x1="36.83" y1="20.574" x2="36.83" y2="18.542" width="0.1778" layer="10"/>
 <wire x1="36.83" y1="18.542" x2="37.719" y2="17.653" width="0.1778" layer="10"/>
@@ -4680,23 +4697,12 @@ design rules under a new name.</description>
 <wire x1="37.719" y1="16.637" x2="37.338" y2="16.256" width="0.1778" layer="10"/>
 <wire x1="37.338" y1="16.256" x2="34.417" y2="16.256" width="0.1778" layer="10"/>
 <wire x1="34.417" y1="16.256" x2="23.368" y2="27.305" width="0.1778" layer="10"/>
-<wire x1="41.148" y1="23.114" x2="41.148" y2="22.098" width="0.1778" layer="1"/>
-</signal>
-<signal name="MPU-SDI">
-<contactref element="U10" pad="24"/>
 <contactref element="U1" pad="11"/>
 <wire x1="42.71" y1="25.75" x2="42.71" y2="23.66" width="0.1778" layer="1"/>
-<wire x1="42.71" y1="23.66" x2="42.037" y2="22.987" width="0.1778" layer="1"/>
-<via x="31.242" y="28.194" extent="1-16" drill="0.3302"/>
-<wire x1="30.0216" y1="27.9367" x2="30.9913" y2="27.9367" width="0.1778" layer="1"/>
-<wire x1="30.9913" y1="27.9367" x2="31.242" y2="28.194" width="0.1778" layer="1"/>
-<wire x1="31.242" y1="28.194" x2="32.893" y2="28.194" width="0.1778" layer="16"/>
-<wire x1="32.893" y1="28.194" x2="37.973" y2="23.114" width="0.1778" layer="16"/>
-<via x="37.973" y="23.114" extent="1-16" drill="0.3302"/>
-<wire x1="42.037" y1="22.987" x2="42.037" y2="21.717" width="0.1778" layer="1"/>
-<wire x1="42.037" y1="21.717" x2="41.529" y2="21.209" width="0.1778" layer="1"/>
-<wire x1="41.529" y1="21.209" x2="39.878" y2="21.209" width="0.1778" layer="1"/>
-<wire x1="39.878" y1="21.209" x2="37.973" y2="23.114" width="0.1778" layer="1"/>
+<wire x1="42.71" y1="23.66" x2="41.91" y2="22.86" width="0.1778" layer="1"/>
+<wire x1="41.91" y1="22.86" x2="41.91" y2="22.098" width="0.1778" layer="1"/>
+<contactref element="TP3" pad="P$1"/>
+<wire x1="41.91" y1="22.098" x2="41.91" y2="20.955" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$13">
 <contactref element="U10" pad="20"/>
@@ -4766,6 +4772,23 @@ design rules under a new name.</description>
 <contactref element="R25" pad="2"/>
 <wire x1="25.8184" y1="27.4321" x2="25.2579" y2="27.4321" width="0.1778" layer="1"/>
 <wire x1="25.2579" y1="27.4321" x2="24.13" y2="28.56" width="0.1778" layer="1"/>
+</signal>
+<signal name="MPU-MOSI">
+<contactref element="U10" pad="24"/>
+<via x="31.242" y="28.194" extent="1-16" drill="0.3302"/>
+<wire x1="30.9913" y1="27.9367" x2="31.242" y2="28.194" width="0.1778" layer="1"/>
+<wire x1="31.242" y1="28.194" x2="32.893" y2="28.194" width="0.1778" layer="16"/>
+<wire x1="32.893" y1="28.194" x2="37.973" y2="23.114" width="0.1778" layer="16"/>
+<via x="37.973" y="23.114" extent="1-16" drill="0.3302"/>
+<contactref element="U1" pad="12"/>
+<wire x1="42.31" y1="25.75" x2="42.31" y2="23.768" width="0.1778" layer="1"/>
+<wire x1="42.31" y1="23.768" x2="40.513" y2="21.971" width="0.1778" layer="1"/>
+<wire x1="40.513" y1="21.971" x2="39.116" y2="21.971" width="0.1778" layer="1"/>
+<wire x1="39.116" y1="21.971" x2="37.973" y2="23.114" width="0.1778" layer="1"/>
+<contactref element="TP4" pad="P$1"/>
+<wire x1="37.973" y1="23.114" x2="37.973" y2="24.003" width="0.2032" layer="16"/>
+<wire x1="37.973" y1="24.003" x2="38.227" y2="24.257" width="0.2032" layer="16"/>
+<wire x1="30.0216" y1="27.9367" x2="30.9913" y2="27.9367" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

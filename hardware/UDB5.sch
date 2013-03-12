@@ -14786,6 +14786,67 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PAD.02X.02">
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TEST-POINT">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEST-POINT" prefix="TP">
+<description>Bare copper test points for troubleshooting or ICT</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14999,6 +15060,10 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <part name="GND36" library="SparkFun" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="LOGO-SFE" device="NW2"/>
 <part name="CC_TEXT1" library="SparkFun-Aesthetics" deviceset="CREATIVE_COMMONS" device=""/>
+<part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
+<part name="TP2" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
+<part name="TP3" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
+<part name="TP4" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
 </parts>
 <sheets>
 <sheet>
@@ -15753,6 +15818,10 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <attribute name="VALUE" x="24.13" y="15.367" size="1.778" layer="96"/>
 </instance>
 <instance part="GND34" gate="1" x="22.86" y="7.62"/>
+<instance part="TP1" gate="G$1" x="154.94" y="149.86" smashed="yes" rot="R180"/>
+<instance part="TP2" gate="G$1" x="154.94" y="147.32" smashed="yes" rot="R180"/>
+<instance part="TP3" gate="G$1" x="154.94" y="144.78" smashed="yes" rot="R180"/>
+<instance part="TP4" gate="G$1" x="154.94" y="142.24" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -16177,6 +16246,7 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <wire x1="167.64" y1="149.86" x2="154.94" y2="149.86" width="0.1524" layer="91"/>
 <label x="154.94" y="149.86" size="1.778" layer="95"/>
 <pinref part="U1" gate="G3" pin="RG9/SS2"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MPU-SCK" class="0">
@@ -16184,20 +16254,15 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <wire x1="167.64" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
 <label x="154.94" y="147.32" size="1.778" layer="95"/>
 <pinref part="U1" gate="G3" pin="RG6/SCK2"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MPU-SDI" class="0">
+<net name="MPU-MISO" class="0">
 <segment>
 <wire x1="167.64" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
 <label x="154.94" y="144.78" size="1.778" layer="95"/>
 <pinref part="U1" gate="G3" pin="RG7/SDI2"/>
-</segment>
-</net>
-<net name="MPU-SDO" class="0">
-<segment>
-<wire x1="167.64" y1="142.24" x2="154.94" y2="142.24" width="0.1524" layer="91"/>
-<label x="154.94" y="142.24" size="1.778" layer="95"/>
-<pinref part="U1" gate="G3" pin="RG8/SDO2"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SS1" class="0">
@@ -16394,6 +16459,14 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <wire x1="213.36" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
 <label x="218.44" y="116.84" size="1.778" layer="95"/>
 <pinref part="U1" gate="G3" pin="RA14"/>
+</segment>
+</net>
+<net name="MPU-MOSI" class="0">
+<segment>
+<wire x1="167.64" y1="142.24" x2="154.94" y2="142.24" width="0.1524" layer="91"/>
+<label x="154.94" y="142.24" size="1.778" layer="95"/>
+<pinref part="U1" gate="G3" pin="RG8/SDO2"/>
+<pinref part="TP4" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -17096,18 +17169,11 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <label x="132.08" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MPU-SDO" class="0">
+<net name="MPU-MISO" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="AD0/SDO"/>
 <wire x1="129.54" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
 <label x="132.08" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MPU-SDI" class="0">
-<segment>
-<pinref part="U10" gate="G$1" pin="SDA/SDI"/>
-<wire x1="129.54" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
-<label x="132.08" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -17146,6 +17212,13 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 <label x="154.94" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MPU-MOSI" class="0">
+<segment>
+<pinref part="U10" gate="G$1" pin="SDA/SDI"/>
+<wire x1="129.54" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
+<label x="132.08" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
