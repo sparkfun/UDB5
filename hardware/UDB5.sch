@@ -16484,6 +16484,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="30.48" y="71.12" size="3.048" layer="95" ratio="12">GPS</text>
 <text x="190.5" y="71.12" size="3.048" layer="95" ratio="12">EEPROM</text>
 <text x="81.28" y="71.12" size="3.048" layer="95" ratio="12">GYROS and ACCELEROMETER</text>
+<wire x1="0" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="58.42" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="172.72" y1="86.36" x2="248.92" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="55.88" y1="0" x2="58.42" y2="0" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="58.42" y1="0" x2="58.42" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="172.72" y1="35.56" x2="172.72" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>

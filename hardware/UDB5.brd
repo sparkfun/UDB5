@@ -256,7 +256,7 @@
 <text x="45.4406" y="30.9268" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
 <text x="47.9806" y="30.9268" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
 <text x="32.0167" y="5.3363" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">-</text>
-<text x="18.034" y="27.686" size="0.8128" layer="21" font="vector" ratio="15">direction</text>
+<text x="17.78" y="27.813" size="0.8128" layer="21" font="vector" ratio="15">direction</text>
 <text x="20.066" y="26.289" size="0.8128" layer="21" font="vector" ratio="15">of</text>
 <text x="19.558" y="24.13" size="0.8128" layer="21" font="vector" ratio="15">flight</text>
 </plain>
@@ -4791,23 +4791,6 @@ design rules under a new name.</description>
 <wire x1="30.9847" y1="27.9367" x2="31.242" y2="28.194" width="0.2032" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,3c5b0a590a493c4b"/>
-<approved hash="19,1,393b0f390f29392b"/>
-<approved hash="19,1,3d4a0b480fb039b2"/>
-<approved hash="19,1,4638cc3acc564654"/>
-<approved hash="19,1,4358c95ac9364334"/>
-<approved hash="19,1,4249c84bcccf46cd"/>
-<approved hash="19,1,c349594b5dc4c7c6"/>
-<approved hash="19,1,c258585a583dc23f"/>
-<approved hash="19,1,c7385d3a5d5dc75f"/>
-<approved hash="19,1,a51a5e163dafb80e"/>
-<approved hash="19,1,9b98052f1136c6fc"/>
-<approved hash="19,1,4d21f1cf37dc1791"/>
-<approved hash="5,1,ac8ba9a68a9ba9a4"/>
-<approved hash="19,1,a533111974e4c339"/>
-<approved hash="19,1,c486f7a4b96153de"/>
-</errors>
 </board>
 </drawing>
 </eagle>
